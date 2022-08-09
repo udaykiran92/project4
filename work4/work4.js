@@ -162,7 +162,9 @@ app.controller('ourController', function($scope){
     }
   }
 });
-
+$scope.heart=function(event){
+  event.currentTarget.style.color=event.currentTarget.style.color == "green" ? 'black':'green';
+}
 
 app.filter('searchFor', function () {
   return function (arr, searchElement) {

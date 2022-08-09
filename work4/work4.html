@@ -15,7 +15,7 @@
     <div class="header">
       <div class="row-head">
         <div class="col-sm-4">
-          <img id="logo" src="../images/gym.jpg" alt="gymlogo">
+          <img id="logo" src="../image/gym.jpg" alt="gymlogo">
           </div>
         <div class="col-md-8 content">
           <div class="menu">
@@ -43,8 +43,10 @@
                         <div class="card-body">
                         <h6>{{thing.name}}</h6>
                         <p>{{thing.desc}}</p>
+                        <span id="hearticon"></span><i ng-style="myStyle" ng-click="heart($event)" class="fa-solid fa-heart" style="padding-left:90%; padding-bottom:10px;"></i></span>
                         <p> &#8377;
                         {{thing.price}}  <button class="button btn-primary" ng-click="gym(thing)">put in bag</button></p>
+
                          </div>
                     </div>
                 </div>
